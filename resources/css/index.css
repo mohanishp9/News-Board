@@ -1,0 +1,135 @@
+.icon{
+  width: 27px;
+  height: 9px;
+  top: 10px;
+  left: 1px;
+  border-radius: 4.5px;
+  background: linear-gradient(96.34deg, #E537B9 0%, #C040DF 100%);
+}
+
+.nav-text{
+  font-family: Montserrat;
+font-size: 23px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 2px;
+text-align: left;
+color: #292B2E;
+
+}
+
+.head-text{
+  font-family: Montserrat;
+font-size: 24px;
+font-weight: 600;
+line-height: 32px;
+text-align: left;
+color: #252B42;
+}
+
+.para-text {
+  font-family: Montserrat;
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+text-align: left;
+color: #858585;
+}
+
+
+.carousel-controls-outside {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  pointer-events: none;
+}
+
+.carousel-controls-outside button {
+  background-color:#f0dada;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  height: 100%;
+  width: 15px;
+  pointer-events: all;
+ 
+} 
+
+ /* Common styles for both icons */
+ .carousel-controls-outside button .carousel-control-prev-icon,
+ .carousel-controls-outside button .carousel-control-next-icon {
+   display: inline-block;
+   height: 30px; /* Same height for both icons */
+   width: 30px;  /* Same width for both icons */
+   background-image: none;
+   background-color: grey; /* Grey color for the arrows */
+   mask-size: contain;
+   mask-repeat: no-repeat;
+   mask-position: center;
+ }
+
+  /* Left-facing arrow for the previous button */
+  .carousel-controls-outside button .carousel-control-prev-icon {
+    mask-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23FFFFFF" viewBox="0 0 16 16"%3E%3Cpath d="M11.354 1.354a.5.5 0 0 1 0 .707L5.707 7.707l5.647 5.647a.5.5 0 0 1-.707.707l-6-6a.5.5 0 0 1 0-.707l6-6a.5.5 0 0 1 .707 0z"%3E%3C/path%3E%3C/svg%3E');
+  }
+
+  /* Right-facing arrow for the next button */
+  .carousel-controls-outside button .carousel-control-next-icon {
+    mask-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23FFFFFF" viewBox="0 0 16 16"%3E%3Cpath d="M4.646 1.354a.5.5 0 0 1 .707 0l6 6a.5.5 0 0 1 0 .707l-6 6a.5.5 0 1 1-.707-.707L10.293 8 4.646 2.354a.5.5 0 0 1 0-.707z"%3E%3C/path%3E%3C/svg%3E');
+  }
+
+  .carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+
+/* Centered dot between name and date */
+ .name-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  color: #586069;
+}
+
+.name-date::before {
+  content: '\2022';
+  font-size: 24px;
+
+} 
+
+/* Unicode character for a bullet */
+ .carousel-text {
+  padding-top: 10px;
+} 
+
+/* Accordion text area */
+.accordion-text {
+  padding: 15px 0;
+}
+
+.carousel-item img {
+  max-height: 400px; 
+  object-fit: cover;
+  width: 100%;
+}/* To maintain height consistency  */
+
+.author-design{
+ font-family: Montserrat;
+ font-size: 23px;
+ font-weight: 600;
+ line-height: 28px;
+ letter-spacing: 0.20000000298023224px;
+ text-align: left;
+ color: #586069;
+}
